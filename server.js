@@ -7,9 +7,10 @@ const db = require('./database');
 
 const app = express();
 
+
 app.use(express.json());
 const route = require('./routes/route');
 
 app.use('/', route);
 
-app.listen(8090, () => console.log('Server is running on port 8090'));
+app.listen(process.env.PORT, () => console.log('Server is running on port 8090'));

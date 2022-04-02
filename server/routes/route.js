@@ -7,6 +7,7 @@ const {
 	getOrderDetails,
 	updateOrderStatus
 } = require('../controller/index');
+
 router.get('/getorders/:status', getOrders);
 router.get('/getorderdetails/:project_name', getOrderDetails);
 
